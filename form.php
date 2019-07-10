@@ -1,3 +1,5 @@
+
+<?php require_once("dbconnect.php") ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,12 +41,17 @@
               <div class="panel panel-primary">
                   <div class="panel-heading"><h3>Apply Here for Job</h3></div>
                   <div class="panel-body">
-                    <form method="POST" action="upload.php" method="POST" enctype="multipart/form-data">
+                    <form method="POST" action="validate.php" name="addentry" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
 
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" required="required" name="name" placeholder="">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" required="required" name="fname" placeholder="">
                         </div>
+                        <div class="form-group">
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" class="form-control" id="lname" required="required" name="lname" placeholder="">
+                            </div>
                         <div class="form-group">
 
                                 <label for="email">Email</label>
@@ -60,7 +67,11 @@
                       <div class="form-group">
                       <input type="file" name="fileToUpload" id="fileToUpload">
                       <br>
-                      <input type="submit" class="btn btn-primary btn-block" value="Upload CV and Submit" name="submit">
+                      <input type="submit" class="btn btn-primary btn-block" value="submit" name="submitbtn">
+                      <div class="panel-footer">
+                        <p>See Reviewed CV's <a href="review.php"><b>Click Here</b></a></p>
+                        </div>
+
                     </div>
 
 

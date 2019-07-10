@@ -21,6 +21,12 @@ class dbconnector
     $query->bind_param("sssi", $fname, $lname, $email, $mob);
     $query->execute();
   }
-}
+  public function getresults()
+      {
+        global $dblink;
+        $query = $dblink->prepare("SELECT fname,lname,email,mob FROM apply");
+        $query->execute();
+        return ($query->get_result())->fetch_all(MYSQLI_ASSOC);
+      }
 
-header("location:form.php");
+}
