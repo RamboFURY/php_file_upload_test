@@ -15,11 +15,11 @@ $gets = $dbconnection->getresults();
  <thead>
  <tr>
 <th>Name</th>
-<th>phonenumber</th>
+<th>Email_Id</th>
 <th>Mobile</th>
 </tr>
 <?php
-if (count($gets>0)){
+
 $found = 0;
       foreach($gets as $get)
       {
@@ -36,7 +36,7 @@ $found = 0;
     {
       echo '<tr><td colspan="5">No Entries Found</td></tr>';
     }
-  }
+
      ?>
 </thead>
 </table>

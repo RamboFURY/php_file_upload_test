@@ -7,7 +7,7 @@ class dbconnector
   function connect()
   {
     global $dblink;
-    $dblink = new mysqli("localhost","root","","kb_storage");//DATABASE CONNECTION
+    $dblink = new mysqli("localhost","root","","ais_test_storage");//DATABASE CONNECTION
     if($dblink == false)
     {
       die("ERROR: Could not connect. " . mysqli_connect_error());//shows error on erroneous connection

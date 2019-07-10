@@ -1,5 +1,3 @@
-
-<?php require_once("dbconnect.php") ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +65,7 @@
                       <div class="form-group">
                       <input type="file" name="fileToUpload" id="fileToUpload">
                       <br>
-                      <input type="submit" class="btn btn-primary btn-block" value="submit" name="submitbtn">
+                      <input type="submit" class="btn btn-primary btn-block" value="SUBMIT" name="submitbtn">
                       <div class="panel-footer">
                         <p>See Reviewed CV's <a href="review.php"><b>Click Here</b></a></p>
                         </div>
